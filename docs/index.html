@@ -102,13 +102,11 @@
 
         .hero-placeholder {
             width: 500px;
-            height: 350px;
-            background-color: var(--color-placeholder);
+            height: 450px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.2em;
-            color: #777;
             border-radius: 8px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
@@ -325,7 +323,14 @@
             .hero-placeholder {
                 width: 100%;
                 max-width: 450px;
-                height: 250px;
+                height: auto;
+            }
+
+            .hero-placeholder img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                display: block;
             }
 
             h1 {
@@ -351,7 +356,7 @@
 <body>
     
     <header class="container" style="padding-top: 30px; text-align: center;">
-        <div class="logo-placeholder">AERO-SCOOP LOGO</div>
+        <img src="img/logo.png" alt="Dron en vuelo" loading="lazy" style="width:20%; height:auto; border-radius:8px; display:block;">
     </header>
 
     <section class="hero">
@@ -364,7 +369,7 @@
             </div>
             
             <div class="hero-placeholder">
-                [Placeholder: VÍDEO DEMOSTRATIVO del dron IA en acción (Vuelo y Sellado).]
+                <img src="img/Captura de pantalla 2025-12-15 a las 1.32.24.png" alt="Dron en vuelo" loading="lazy" style="width:100%; height:auto; border-radius:8px; display:block;">
             </div>
         </div>
     </section>
@@ -395,13 +400,13 @@
             
             <div class="product-image-grid">
                 <div class="product-placeholder">
-                    [Placeholder: Imagen del Dron]
+                    <img src="img/imagen_1.jpeg" alt="Imagen del dron" loading="lazy" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
                 </div>
                 <div class="product-placeholder">
-                    [Placeholder: Primer Plano del Mecanismo de Sellado]
+                    <img src="img/imagen_2.jpeg" alt="Primer plano del mecanismo de sellado" loading="lazy" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
                 </div>
                 <div class="product-placeholder">
-                    [Placeholder: Cartuchos Compostables]
+                    <img src="img/imagen_3.jpeg" alt="Cartuchos compostables" loading="lazy" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
                 </div>
             </div>
         </div>
